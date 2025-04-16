@@ -1,0 +1,119 @@
+/* Базовые стили */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: white; /* Текст теперь белый */
+    animation: gradientBackground 10s infinite alternate; /* Добавляем анимацию */
+}
+
+/* Анимация для фона страницы */
+@keyframes gradientBackground {
+    0% {
+        background-color: #4CAF50; /* Начальный цвет (зелёный) */
+    }
+    100% {
+        background-color: #8B4513; /* Конечный цвет (коричневый) */
+    }
+}
+
+header {
+    background-color: transparent; /* Фон прозрачный, чтобы не перекрывать анимацию */
+    color: white; /* Белый текст */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 1rem;
+    /* Убираем фон */
+    background-color: transparent; /* Фон становится прозрачным */
+    box-shadow: none; /* Убираем тень, если она больше не нужна */
+}
+
+/* Стиль для h2: синий цвет без подчёркивания */
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: white; /* Белый текст */
+}
+
+.century-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+}
+
+.century-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* Высота карточки */
+    background-color: #4CAF50; /* Зелёный фон */
+    color: white; /* Белый текст */
+    text-decoration: none; /* Убираем подчёркивание */
+    font-size: 1rem; /* Размер текста */
+    font-weight: bold; /* Жирный шрифт */
+    border-radius: 10px; /* Скругление углов */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Анимация */
+}
+
+.century-card:hover {
+    background-color: #45a049; /* Темно-зеленый при наведении */
+    transform: scale(1.05); /* Небольшое увеличение */
+}
+
+/* Контейнер для дополнительной кнопки */
+.additional-button-container {
+    display: flex;
+    justify-content: center; /* Выравнивание по центру */
+    margin-top: 2rem; /* Отступ сверху */
+}
+
+/* Стиль для новой кнопки */
+.additional-button-container .century-card {
+    width: 100%; /* Ширина кнопки */
+    max-width: 300px; /* Максимальная ширина */
+}
+
+/* Стиль для кнопки "Вернуться на главную" */
+.back-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem; /* Внутренние отступы */
+    background-color: #4CAF50; /* Зелёный фон */
+    color: white; /* Белый текст */
+    text-decoration: none; /* Убираем подчёркивание */
+    font-size: 1rem; /* Размер текста */
+    font-weight: bold; /* Жирный шрифт */
+    border-radius: 10px; /* Скругление углов */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Анимация */
+}
+
+.back-button:hover {
+    background-color: #45a049; /* Темно-зеленый при наведении */
+    transform: scale(1.05); /* Небольшое увеличение */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: transparent; /* Фон прозрачный */
+    color: white; /* Белый текст */
+    margin-top: 2rem;
+}
